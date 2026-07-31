@@ -1,19 +1,31 @@
 SMARTSUS — CONTEXTO DE EMPRESA (para lectura de IA / referencia rápida)
-Última actualización: 2026-07-30. Fuente: SmartsusJunio26.pdf (pitch deck, junio 2026) + landing page existente.
+Última actualización: 2026-07-30.
 
 ===========================================================
 1. QUÉ ES SMARTSUS
 ===========================================================
-Smartsus es una startup mexicana (deep tech / industria 4.0) que ofrece tecnología y
-expertise para AHORRAR AGUA Y ENERGÍA en plantas industriales, comerciales e
-institucionales. Detecta fallas en menos de un minuto usando IA e IoT.
+Smartsus es una startup mexicana (deep tech / industria 4.0), experta en CONECTAR equipos
+de agua, HVAC (aire acondicionado) y energía para detectarles fallas, automatizarlos y
+generar ahorros reales. No optimizamos un equipo aislado: armonizamos cuándo se prende y
+apaga cada sistema para que todos trabajen en conjunto hacia una misma meta (de ahorro,
+de confort, de continuidad operativa). Generamos reportes de forma autónoma y avisamos de
+áreas de oportunidad — como incumplimientos de control en punta (demanda eléctrica) o
+equipos encendidos cuando nadie los está usando — antes de que se conviertan en un costo.
+Detectamos fallas en menos de un minuto usando IA e IoT.
 
-Tagline: "Tecnología y expertise para ahorrar agua y energía"
-Sub-tagline: "Detecta fallas en menos de un minuto con IA y IoT"
-Tagline sitio actual: "Control total de tu consumo de agua y energía en un solo lugar"
+Tagline: "Expertos en conectar tus sistemas de agua, HVAC y energía para detectar fallas y
+generar ahorros"
+Sub-tagline: "Automatización, reportes autónomos y alertas de oportunidad — desde control
+en punta hasta equipos encendidos sin uso — directo a tu celular"
+Tagline sitio actual (H1 del hero): "Conecta, automatiza y ahorra: control total de tu agua,
+energía y HVAC en un solo lugar"
+
+Nota de tono: hablar siempre de "conectar / armonizar / coordinar sistemas", no de
+"optimizar un equipo". El valor de Smartsus está en hacer que agua, HVAC y energía trabajen
+como un solo sistema, no en afinar una bomba o un chiller de forma aislada.
 
 Sitio web: https://smartsus.com
-Plataforma / demo: https://kaab.smartsus.com
+Plataforma / demo: https://kaab.smartsus.com (acceso restringido — ver sección 5)
 
 ===========================================================
 2. UBICACIÓN Y ZONA DE OPERACIÓN
@@ -28,10 +40,10 @@ Plataforma / demo: https://kaab.smartsus.com
 ===========================================================
 3. EL PROBLEMA QUE RESUELVEN
 ===========================================================
-La gestión de agua y energía es cada vez más difícil por:
+La gestión de agua, energía y HVAC es cada vez más difícil por:
 - Pérdidas ocultas y recurrentes (fugas, ineficiencias no detectadas)
 - Infraestructura obsoleta
-- Sistemas aislados y manuales (sin comunicación entre sí)
+- Sistemas aislados y manuales (sin comunicación entre sí, ni entre agua/HVAC/energía)
 - Datos incompletos o inexistentes
 - Recortes o falta de presupuesto
 
@@ -50,61 +62,94 @@ Acompañan al cliente de inicio a fin con la metodología NEXUS 360:
 - X - eXtraer: extracción de datos (IoT).
 - U - Unificar: monitoreo centralizado en tiempo real (Web).
 - S - Supervisar: predicción y alertas con IA.
-- 360: optimización con IA y simulación con gemelos digitales (ciclo continuo).
+- 360: optimización con IA y simulación con gemelos digitales, armonizando el
+  encendido/apagado de los distintos sistemas (agua, HVAC, energía) para cumplir una meta
+  común — ciclo continuo, no un ajuste puntual de un solo equipo.
 
 ===========================================================
 5. PLATAFORMA / PRODUCTO: KAAB
 ===========================================================
 Nombre de la plataforma web: KAAB (kaab.smartsus.com).
-Modelo de negocio de la plataforma: HSaaS (Hardware & Software as a Service).
-- Se contrata como OPEX, no CAPEX.
-- Incluye hardware (sensores/dispositivos propios), instalación, mantenimiento y reparación.
-- Duración de contrato mínima: 3 años.
+Modelo de negocio de la plataforma: ver sección 6 (HSaaS o CAPEX + renta de plataforma).
+
+ACCESO: KAAB solo es accesible para usuarios activos (clientes con contrato) — no hay una
+demo pública ni un login de prueba abierto. Para que un prospecto entienda cómo funciona la
+plataforma, la referencia pública correcta es el video de demostración, NO un intento de
+acceso o simulación de login en el sitio:
+  Video demo de la plataforma KAAB: https://www.youtube.com/watch?v=WHpID7hqGTc
 
 Capacidades / módulos de la plataforma:
 - Dashboards interactivos y personalizables (widgets de indicadores, gráficas, diagramas).
-- Reportes automatizados (exportación a PDF vía Email o Drive).
-- Alertas y notificaciones de fallas en tiempo real vía WhatsApp y Telegram (<1 minuto).
+- Reportes automatizados y autónomos (exportación a PDF vía Email o Drive), sin necesidad de
+  que alguien los arme manualmente.
+- Alertas y notificaciones en tiempo real vía WhatsApp y Telegram (<1 minuto), incluyendo:
+  - Fallas y valores fuera de rango (sensores, bombas, HVAC, subestaciones).
+  - Áreas de oportunidad: equipos encendidos cuando no se están usando, incumplimiento de
+    control en punta (demanda eléctrica), consumo fuera de horario.
+  - Pronóstico de lluvia (cuándo y cuánto va a llover), para que sistemas de captación de
+    agua pluvial se preparen con anticipación.
 - Mapa: lectura de sensores geolocalizados a lo largo del país (múltiples ramales/sitios).
-- Diagramas: rebombeos, tanques, pozos, hidroneumáticos, HVACs, subestaciones, plantas de
-  emergencia — y la interacción entre ellos, con vista en tiempo real.
+- Diagramas: rebombeos, tanques, pozos, hidroneumáticos, HVACs (chillers, torres de
+  enfriamiento), subestaciones, plantas de emergencia — mostrando la interacción entre ellos
+  y cómo se coordina su encendido/apagado en conjunto, no solo el estado de cada equipo por
+  separado.
 - Análisis: gráficas inmediatas, simulaciones y proyecciones de comportamiento con IA.
 - Dispositivos: lectura de sensores (KW/h, L/s, °C, estado de bombas, presión, ciclos, etc.).
-- Control & Automatización: control remoto de bombas y válvulas.
+- Control & Automatización: control remoto de bombas, válvulas y equipos de HVAC,
+  armonizando cuándo se prende y apaga cada uno para cumplir una meta conjunta.
 - Modelos IA: análisis multivariable, predicciones, simulación de escenarios ("gemelos
   digitales").
+- Activos y mantenimiento: ficha por equipo con manuales, números de contacto de
+  proveedores/mantenimiento, fechas de mantenimiento programado, y la relación entre activos
+  (qué está conectado a qué). Incluye valores nominales de placa (corriente, potencia,
+  voltaje) de motores. Es personalizable: permite llevar este registro al mismo tiempo que
+  se ven los valores operativos en tiempo real (corriente, voltaje, etc.) del mismo equipo.
+- Proyectos: simula proyectos de ahorro (ej. cambio de luminarias, control en punta) y
+  muestra una referencia del impacto ambiental y económico esperado antes de invertir;
+  también permite verificar el impacto real de proyectos ya realizados.
 - Accesos personalizados: permisos por región, sensor, sitio, indicador o comando.
 - Indicadores personalizados: promedios y totales por hora/día, encendido/apagado
   programado, huella de carbono, indicadores a la medida.
-- Alertas configurables: valores fuera de rango, fallo de sensores, consumo fuera de horario.
 
 ===========================================================
 6. MODELO DE NEGOCIO (B2B)
 ===========================================================
-Tres líneas de servicio, con el SaaS como ingreso "core":
+Tres líneas de servicio, con el SaaS/plataforma como ingreso "core":
 1. Software as a Service (Core Revenue): Web App (plataforma KAAB) + módulos adicionales.
 2. Consultoría: ingeniería de detalle, diseño de instrumentación y comunicación.
 3. Integración: proyecto llave en mano — integración de infraestructura actual o de nueva
    infraestructura (hardware + sensores).
 
+Modelos comerciales para pagar hardware + software (el cliente elige):
+a) HSaaS (Hardware & Software as a Service): todo incluido — hardware, instalación,
+   mantenimiento y reparación, más la plataforma KAAB — como un solo gasto OPEX (no CAPEX).
+   Duración de contrato mínima: 3 años.
+b) CAPEX + renta de plataforma: el cliente compra e instala el hardware como CAPEX (pago
+   único), y por separado renta el uso de la plataforma KAAB como OPEX (suscripción
+   recurrente).
+
 ===========================================================
 7. DIFERENCIADORES vs. COMPETENCIA
 (vs. OEM tradicional, consultoras, software genérico)
 ===========================================================
-- Nexo agua-energía en una sola plataforma (no solo uno de los dos).
+- Nexo agua-energía-HVAC en una sola plataforma (no solo uno de los tres).
+- Armonizamos sistemas completos (cuándo prender/apagar cada equipo para una meta común),
+  en vez de vender la optimización de un equipo aislado.
 - Compatible con infraestructura existente del cliente (no requiere reemplazo total).
 - Integración abierta con otros sistemas / sensores de cualquier marca (+15 marcas, +18
   tipos de sensor probados).
 - Hardware propio de bajo costo.
 - Implementación en menos de 2 meses.
 - ROI estimado en 18 meses.
+- Flexibilidad comercial: HSaaS (todo OPEX) o CAPEX + renta de plataforma, según convenga
+  al cliente (ver sección 6).
 
 ===========================================================
 8. TRACCIÓN Y CASOS DE USO (a junio 2026)
 ===========================================================
 Clientes / instituciones donde la plataforma opera o está en implementación:
 - Tecnológico de Monterrey
-- Soriana
+- AquaCapital
 - Instituto del Agua del Estado (Aguascalientes)
 - Angelópolis Lifestyle Center (Puebla)
 - DIGATEM México
@@ -125,7 +170,7 @@ Métricas actuales de monitoreo:
 - 150 KPIs automatizados.
 - 3,500 alertas enviadas por Telegram y WhatsApp.
 
-Impacto acumulado generado:
+Impacto acumulado generado (cifra general de la compañía, todos los sitios):
 - Ahorro de agua: -9% anual.
 - Ahorro de energía: -10% anual.
 - Ahorro económico: ~$100K MXN anuales (por sitio/piloto).
@@ -140,20 +185,39 @@ Caso de éxito destacado: Planta de tratamiento de aguas de 2,000 lps en Aguasca
   recomendaciones para optimizar equipos críticos; toda la información de agua, energía,
   presión y temperatura concentrada en una sola plataforma web; alertas para reducir el
   tiempo sin tratamiento de agua.
+- Resultado adicional y específico de control en punta: en ese mismo sitio, las alertas de
+  control en punta (avisan cuando no se están cumpliendo las condiciones de demanda
+  eléctrica pactadas, permitiendo corregir a tiempo) generan un ahorro de aproximadamente
+  $100,000 MXN AL MES. Esta cifra es específica de esa funcionalidad en ese sitio, y es
+  ADICIONAL al ahorro económico general de ~$100K MXN anuales reportado arriba — no lo
+  sustituye ni se debe confundir con él.
+
+Testimonio real de cliente (Tecnológico de Monterrey):
+"Es como si el sistema de HVAC me hablara: todo me llega a mi celular — cuándo se prende,
+qué está pasando — sin necesidad de estar al pendiente de la plataforma."
+— Operador del sistema de HVAC, Tecnológico de Monterrey.
+Nota: cita parafraseada por el fundador a partir de una conversación directa con el cliente,
+sin nombre propio disponible. Es una cita real (no inventada), pero antes de publicarla de
+forma verbatim y atribuida en materiales formales (no solo en el sitio web), lo ideal es
+obtener confirmación por escrito del cliente.
 
 ===========================================================
 9. EQUIPO
 ===========================================================
-- Dante Chavarría — PhD Industria 4.0 y desarrollo de IoT.
-- Daniel Chavarría — PhD Inteligencia Artificial Aplicada.
-- David Barrientos — COO & Co-Founder, PhD Algoritmos para optimización de agua.
-  Contacto: david@smartsus.com / david.barrientos@smartsus.com, 55-1254-9706.
-- Javier Agustín — Director de Estrategia, MBA/MS SMIB Economía Circular.
-  Contacto: javier.agustin@smartsus.com.
-- Ángel Calderón — MsC Energías Renovables.
-- Ing. Ariadna, Ing. Vanesa, MBA Ossmara Del Ángel — equipo operativo/ingeniería.
+Por decisión del equipo, NO se usan títulos corporativos/jerárquicos (CEO, CTO, COO,
+Director, Cofundador, etc.), ni interna ni públicamente. En vez de eso, cada integrante se
+describe por su expertise y credencial académica.
 
-Credenciales del equipo:
+- Dante Chavarría — Experto en Industria 4.0 y desarrollo de IoT (PhD).
+- Daniel Chavarría — Experto en Inteligencia Artificial Aplicada (PhD).
+- David Barrientos — Experto en algoritmos para optimización de agua (PhD).
+  Contacto: david@smartsus.com / david.barrientos@smartsus.com, 55-1254-9706.
+- Javier Agustín — Experto en negocios (MBA/MS SMIB, Economía Circular).
+  Contacto: javier.agustin@smartsus.com.
+- Ángel Calderón — Experto en energías renovables (MsC).
+- Ariadna, Vanesa, Ossmara Del Ángel — equipo de ingeniería y operación (Ing., MBA).
+
+Credenciales del equipo (colectivas):
 - Desarrollo tecnológico: +10 años de investigación, 10 publicaciones científicas en IA,
   Industria 4.0, automatización y control, diseño de productos inteligentes, sensing,
   algoritmos de detección de fugas.
@@ -161,13 +225,16 @@ Credenciales del equipo:
   instrumentados y comunicados; +10 proyectos en la red hidráulica de CDMX; +100 proyectos
   de equipamiento a PTAR (plantas de tratamiento de aguas residuales); puesta en operación
   de equipos en USA, Argentina, Singapur, Arabia Saudita, Israel e Inglaterra.
+- Importante: estas cifras son la SUMA de la trayectoria de cada integrante en sus roles y
+  empleos anteriores (antes de o en paralelo a Smartsus), no solo el tiempo dentro de la
+  empresa. Es conocimiento colectivo del equipo, no el historial de una sola persona.
 
 ===========================================================
 10. CONTACTO OFICIAL
 ===========================================================
 - Web: www.smartsus.com
 - Email general: contacto@smartsus.com
-- Email co-founder: david@smartsus.com (también david.barrientos@smartsus.com)
+- Email: david@smartsus.com (también david.barrientos@smartsus.com)
 - Teléfono: +52 55 1254 9706
 - Redes: LinkedIn (linkedin.com/company/smartsus), YouTube (@smartsus),
   Instagram (instagram.com/smartsus)
@@ -178,22 +245,174 @@ Credenciales del equipo:
 ===========================================================
 - Enfoque en resultados medibles: % de ahorro de agua/energía, tiempo de detección de
   fallas (<1 min), ROI en 18 meses, implementación en <2 meses.
-- Mensaje central: "control total", "de inicio a fin", "un solo lugar" — integran todo lo
-  que hoy está disperso (sensores de distintas marcas, reportes manuales, sistemas
-  aislados) en una sola plataforma.
+- Mensaje central: "conectar y armonizar" agua, HVAC y energía — no optimizar un equipo
+  aislado, sino coordinar cómo y cuándo trabaja cada sistema para cumplir una meta común.
+  También: "control total", "de inicio a fin", "un solo lugar" — integran todo lo que hoy
+  está disperso (sensores de distintas marcas, reportes manuales, sistemas aislados).
 - Evitan hablar de tecnología per se; hablan del dolor de negocio (OPEX que se va en fallas,
   reemplazos de equipo, producción perdida) y de cómo la IA/IoT lo resuelve.
+- Sin títulos corporativos para el equipo (ver sección 9): se habla de expertise y
+  credenciales académicas, no de jerarquía tipo CEO/CTO/COO/Director.
 - Color primario de marca: azul (#1266F1), degradado a azul oscuro (#0F52C7). Tipografía:
   Inter. Logo: rayo/ala estilizada en azul.
 - Cierre de pitch: "¡Construyamos juntos un futuro donde el agua se gestione de forma
   inteligente y sostenible!"
 
 ===========================================================
-12. NOTA PARA LA IA QUE LEA ESTE ARCHIVO
+12. PERFIL DE COMPRADOR (ICP) — a quién le hablan las landing pages
 ===========================================================
-Este documento resume el pitch deck de junio 2026 y el sitio web existente. El pitch deck
-está enfocado 100% en agua y energía (bombeo, PTAR, HVAC, subestaciones). NO menciona
-gabinetes industriales de control para bombas o sopladores (blowers) como línea de
-producto — esa es una nueva vertical de negocio que se está lanzando con una landing page
-dedicada (ver carpeta /cabinet), y su contenido técnico específico vino directamente del
-usuario, no de este PDF.
+Definido el 2026-07-30. NO se está targeteando por ahora a integradores/despachos de
+ingeniería como comprador primario (son un canal posible a futuro, no el foco actual de las
+páginas públicas).
+
+Perfiles confirmados:
+
+1. Gerente/Jefe de mantenimiento u operaciones.
+   - Dolor: paros no programados, culpa cuando algo truena, falta de visibilidad de alarmas.
+   - Mensaje que le importa: detección de fallas <1 min, alertas WhatsApp, rotación
+     automática que evita que un equipo se desgaste antes de tiempo.
+
+2. Director de planta / gerente general.
+   - Dolor: OPEX impredecible, sorpresas de CAPEX por reemplazo de equipo, riesgo operativo.
+   - Mensaje que le importa: ROI en 18 meses, implementación en <2 meses, compatibilidad con
+     infraestructura existente (no requiere reemplazar todo).
+
+3. Responsable de sustentabilidad / ESG.
+   - Dolor: reportar ahorro de agua/energía y huella de carbono sin hojas de cálculo
+     manuales, cumplir metas corporativas de sustentabilidad.
+   - Mensaje que le importa: -9% agua / -10% energía anual, reportes automatizados,
+     indicadores de huella de carbono en KAAB.
+
+Perfiles candidatos a explorar (propuestos 2026-07-30, aún no validados en campo):
+
+4. Especialista en demanda eléctrica / tarifas CFE.
+   - Dolor: penalizaciones por demanda máxima en el recibo CFE (tarifas GDMTH/DAC), picos de
+     consumo no controlados.
+   - Mensaje que le importaría: alertas de control en punta en tiempo real, ahorro
+     cuantificable directamente en el recibo de luz (ver el caso de ~$100K MXN/mes en
+     Aguascalientes, sección 8).
+
+5. Organismo operador de agua (municipal/estatal).
+   - Dolor: interrupciones de servicio público, presión regulatoria/política, presupuesto
+     gubernamental limitado y ciclos de aprobación largos.
+   - Mensaje que le importaría: continuidad del servicio, cumplimiento normativo,
+     evidencia/reportes para rendición de cuentas pública. (Ya hay un cliente de este tipo:
+     Instituto del Agua del Estado de Aguascalientes — ver sección 8).
+
+===========================================================
+13. ESTRATEGIA COMERCIAL: LOS GABINETES COMO PUERTA DE ENTRADA A KAAB
+===========================================================
+Decisión de negocio (2026-07-30): los gabinetes de control de bombas/sopladores son,
+deliberadamente, la "cuña" (wedge) de entrada al negocio, no una línea de producto paralela
+y desconectada de KAAB. Este es el gancho de entrada principal hoy porque entender la
+plataforma completa es más complejo que resolver un dolor concreto de hardware.
+
+Por qué: un dueño de planta financia con más facilidad un dolor agudo y concreto ("mi bomba
+se sigue quemando", "necesito que alguien me avise si algo falla") que una suscripción
+abstracta a "una plataforma de monitoreo". El gabinete es hardware tangible, resuelve un
+problema puntual y ya trae integrado el enganche a KAAB (monitoreo remoto, alertas, módulo
+de activos). Una vez que el cliente ve el valor en ese primer equipo, la expansión natural
+es conectar el resto de la planta (tanques, HVAC, subestaciones, otros procesos) a KAAB.
+
+Cómo aplicarlo:
+- El sitio general (KAAB) y la página de gabinetes deben cruzarse explícitamente: la
+  página de gabinetes debe explicar el camino de crecimiento hacia KAAB completo, y el
+  sitio general debe ofrecer el gabinete como el primer paso de bajo riesgo para quien aún
+  no tiene nada monitoreado.
+- El alcance del producto de gabinetes se mantiene deliberadamente ABIERTO a cualquier
+  aplicación industrial de bombas/sopladores (no solo tratamiento de agua/PTAR), aunque hoy
+  la tracción y el caso de éxito documentado sean de ese sector — no hay que estrechar el
+  mensaje a "solo agua" todavía.
+- El comprador objetivo de este wedge son los mismos perfiles de la sección 12
+  (mantenimiento, dirección de planta, sustentabilidad, demanda eléctrica), no
+  integradores/OEMs.
+
+Otros posibles ganchos de entrada a explorar (además del gabinete), propuestos 2026-07-30:
+- Diagnóstico/auditoría gratuita de agua-energía-HVAC en sitio: visita técnica de bajo
+  compromiso que revela oportunidades de ahorro concretas antes de vender nada.
+- Revisión gratuita del recibo de CFE para detectar ahorro potencial por control en punta,
+  sin necesidad de instalar ningún hardware primero.
+- Alertas de pronóstico de lluvia para sistemas de captación pluvial, ofrecidas como un
+  servicio de entrada de muy bajo costo y sin hardware.
+- Módulo de Activos como producto independiente: organiza manuales, contactos y
+  mantenimiento aunque el cliente todavía no tenga sensores instalados.
+- Simulador gratuito del módulo de Proyectos: estima el ahorro de un proyecto (ej. cambio de
+  luminarias) antes de que el cliente se comprometa a nada.
+
+===========================================================
+14. OPORTUNIDADES DE MEJORA EN COMUNICACIÓN (auditoría 2026-07-30)
+===========================================================
+Puntos detectados en el sitio anterior, y su estado:
+
+1. Jerarquía de producto confusa: KAAB, Consultoría e Integración se presentaban como tres
+   ofertas equivalentes, diluyendo el mensaje de que KAAB es el producto insignia y lo demás
+   es lo que ayuda a que el cliente llegue a usarlo. [Resuelto en /general]
+2. Métricas de pitch de inversionista filtrándose al copy de cliente: cifras como "30
+   usuarios activos", "200 millones de datos históricos" o los logos de aceleradoras
+   (Aliar, Catalyst, Innodrop) son tracción para levantar capital, no razones de compra para
+   un cliente industrial. [Resuelto: se prioriza copy de resultado en las páginas públicas]
+3. Los gabinetes no tenían un puente explícito hacia KAAB. [Resuelto — ver sección 13]
+4. Falta de lenguaje dirigido a un ICP específico. [Resuelto — hero de ambas páginas habla a
+   los tres perfiles confirmados de la sección 12]
+5. Un solo tipo de CTA ("agenda una demo/cotización") en todo el sitio, sin una opción de
+   menor compromiso para un visitante que aún no está listo para hablar con ventas. [Sigue
+   pendiente — ver ideas de "ganchos de entrada" en la sección 13; requiere una herramienta o
+   PDF real, no se debe simular]
+6. Prueba social limitada a nombres de cliente sin ninguna cita textual. [Parcialmente
+   resuelto: ya existe una cita real de un cliente de Tecnológico de Monterrey, ver sección
+   8. Sigue haciendo falta obtener logos reales de cliente y más testimonios confirmados por
+   escrito]
+7. La demo pública de la plataforma no era viable de mostrar en vivo porque KAAB solo es
+   accesible para usuarios activos. [Resuelto: se usa el video de demostración en vez de
+   simular acceso — ver sección 5 y 16]
+
+===========================================================
+15. METAS E INTENCIONES DEL NEGOCIO (6-12 meses, definidas 2026-07-30)
+===========================================================
+- Meta principal: cerrar más pilotos/contratos pagados en las cuatro entidades de cobertura
+  actual (CDMX, Estado de México, Puebla, Aguascalientes), usando la línea de gabinetes de
+  control como puerta de entrada de menor fricción hacia contratos de KAAB de mayor alcance.
+  No hay todavía una cifra objetivo formal — la intención es directional: más pilotos
+  pagados por trimestre, expandiendo cuentas de "un gabinete" a "planta completa en KAAB".
+- El gabinete se mantiene como oferta horizontal (cualquier aplicación industrial de
+  bombas/sopladores), sin cerrarse todavía a un solo vertical, aun cuando el caso de éxito
+  disponible sea de tratamiento de agua.
+- Implicación para las landing pages: cada pieza de copy nueva debe, en la medida de lo
+  posible, dejar claro (a) a cuál perfil de la sección 12 le habla y (b) cómo conecta con el
+  siguiente paso de la relación comercial (gabinete -> KAAB completo), sin exponer esta
+  lógica de embudo como si fuera información interna de estrategia (el visitante debe
+  sentir una oferta natural de crecimiento, no una jugada de ventas explicada).
+
+===========================================================
+16. RECURSOS DE REFERENCIA (videos)
+===========================================================
+- Video demo de la plataforma KAAB (agua, energía, HVAC, alertas, activos, proyectos):
+  https://www.youtube.com/watch?v=WHpID7hqGTc
+  Uso: sitio general (/general), en vez de un intento de acceso o login de demo real, ya que
+  KAAB solo es accesible para usuarios activos (ver sección 5).
+- Video del tipo de control inteligente posible con los gabinetes (rotación, alarmas,
+  control por VFD): https://www.youtube.com/watch?v=pUncwxK5xnQ
+  Uso: página de gabinetes (/cabinet), para mostrar de forma concreta el tipo de control que
+  ofrece el producto.
+
+===========================================================
+17. NOTA PARA LA IA QUE LEA ESTE ARCHIVO
+===========================================================
+Este documento combina el pitch deck de junio 2026 con decisiones de posicionamiento,
+estrategia comercial y datos operativos confirmados directamente por el fundador en
+conversación continua (secciones 5-16 incluyen actualizaciones posteriores al PDF original).
+
+Todo el contenido de este archivo tiene el MISMO nivel de autoridad. No trates ninguna
+sección como "la versión oficial/original" y otra como "un agregado posterior de menor
+peso" — en particular, los gabinetes de control, el framework de armonización de sistemas
+(agua/HVAC/energía), los ICP, la estrategia de embudo y las metas de negocio son tan válidos
+y centrales como cualquier dato que venga del PDF original. Donde exista un conflicto entre
+el pitch deck original y una actualización posterior confirmada por el fundador, prevalece
+siempre la información más reciente.
+
+Al escribir o actualizar copy de cara al cliente (landing pages, emails, materiales de
+venta): lidera con resultado (ahorro, ROI, velocidad de detección) y con el dolor del ICP
+correspondiente (sección 12), no con métricas de tracción de inversionista (sección 8, que
+sigue siendo válida pero es para contexto interno/inversionistas). No representes ni
+insinúes que kaab.smartsus.com tiene una demo pública abierta — usa los videos de la
+sección 16. No uses títulos corporativos (CEO/CTO/COO/Director/Cofundador) para el equipo.
