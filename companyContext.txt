@@ -346,7 +346,7 @@ Puntos detectados en el sitio anterior, y su estado:
 
 1. Jerarquía de producto confusa: KAAB, Consultoría e Integración se presentaban como tres
    ofertas equivalentes, diluyendo el mensaje de que KAAB es el producto insignia y lo demás
-   es lo que ayuda a que el cliente llegue a usarlo. [Resuelto en /general]
+   es lo que ayuda a que el cliente llegue a usarlo. [Resuelto en la página principal, /newPage]
 2. Métricas de pitch de inversionista filtrándose al copy de cliente: cifras como "30
    usuarios activos", "200 millones de datos históricos" o los logos de aceleradoras
    (Aliar, Catalyst, Innodrop) son tracción para levantar capital, no razones de compra para
@@ -388,12 +388,13 @@ Puntos detectados en el sitio anterior, y su estado:
 ===========================================================
 - Video demo de la plataforma KAAB (agua, energía, HVAC, alertas, activos, proyectos):
   https://www.youtube.com/watch?v=WHpID7hqGTc
-  Uso: sitio general (/general), en vez de un intento de acceso o login de demo real, ya que
-  KAAB solo es accesible para usuarios activos (ver sección 5).
+  Uso: página principal (smartsus.com/, carpeta /newPage), en vez de un intento de acceso o
+  login de demo real, ya que KAAB solo es accesible para usuarios activos (ver sección 5).
 - Video del tipo de control inteligente posible con los gabinetes (rotación, alarmas,
   control por VFD): https://www.youtube.com/watch?v=pUncwxK5xnQ
-  Uso: página de gabinetes (/cabinet), para mostrar de forma concreta el tipo de control que
-  ofrece el producto.
+  Uso: página de gabinetes (smartsus.com/control-de-bombas-y-sopladores/, carpeta
+  /newPage/control-de-bombas-y-sopladores), para mostrar de forma concreta el tipo de
+  control que ofrece el producto.
 
 ===========================================================
 17. NOTA PARA LA IA QUE LEA ESTE ARCHIVO

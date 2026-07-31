@@ -54,25 +54,25 @@ posiciones orgánicas genéricas. Ver sección 5.
 ===========================================================
 3. AUDITORÍA TÉCNICA ACTUAL (2026-07-30) — qué ya está bien y qué se corrigió hoy
 ===========================================================
-Ya estaba bien implementado en /general y /cabinet:
+Ya estaba bien implementado (hoy vive en /newPage, ver arquitectura en sección 3b):
 - Meta tags completos (title, description, keywords, robots, canonical, geo).
 - Open Graph y Twitter Cards (para que se vea bien al compartir en redes/WhatsApp).
 - Datos estructurados Schema.org (JSON-LD) válidos: Organization, WebSite,
-  SoftwareApplication en /general; Product y BreadcrumbList en /cabinet. Se verificaron con
-  un parser JSON y los 5 bloques son válidos.
+  SoftwareApplication en la página principal; Product y BreadcrumbList en la página de
+  gabinetes. Se verificaron con un parser JSON y los 5 bloques son válidos.
 - Un solo <h1> por página (correcto — nunca debe haber más de uno).
 - Todas las imágenes tienen atributo alt descriptivo (bueno para accesibilidad y para
   "Google Imágenes").
-- robots.txt y sitemap.xml existentes en la raíz del repo.
+- robots.txt y sitemap.xml (ahora dentro de /newPage, que es la carpeta que se publica).
 
-Se corrigió HOY (2026-07-30) porque Google corta el texto si es muy largo:
-- Title de /general: medía 73 caracteres (Google muestra ~55-60 antes de cortar) → se
-  redujo a 46: "Smartsus | Conecta agua, HVAC y energía con IA".
-- Meta description de /general: medía 259 caracteres (el límite práctico es ~150-160) → se
-  redujo a 149.
-- Title de /cabinet: medía 91 caracteres → se redujo a 54: "Gabinetes de Control Smartsus
-  para Bombas y Sopladores".
-- Meta description de /cabinet: medía 247 caracteres → se redujo a 155.
+Se corrigió el 2026-07-30 porque Google corta el texto si es muy largo:
+- Title de la página principal: medía 73 caracteres (Google muestra ~55-60 antes de cortar)
+  → se redujo a 46: "Smartsus | Conecta agua, HVAC y energía con IA".
+- Meta description de la página principal: medía 259 caracteres (el límite práctico es
+  ~150-160) → se redujo a 149.
+- Title de la página de gabinetes: medía 91 caracteres → se redujo a 54: "Gabinetes de
+  Control Smartsus para Bombas y Sopladores".
+- Meta description de la página de gabinetes: medía 247 caracteres → se redujo a 155.
 - Se acortaron también las descripciones de Open Graph que estaban muy largas.
 
 Pendiente de resolver (esto SÍ requiere trabajo o una decisión tuya, no se hizo solo):
@@ -87,13 +87,39 @@ Pendiente de resolver (esto SÍ requiere trabajo o una decisión tuya, no se hiz
    - convertir capturas de pantalla grandes a formato WebP (mismo detalle visual, 30-70%
      menos peso)
    Meta razonable: ninguna imagen de la página debería pesar más de ~150-200 KB.
-2. ESTRUCTURA DE DOMINIO/URLS: el sitemap.xml y las etiquetas canonical de /general asumen
-   que esa carpeta se va a publicar en la raíz del dominio (smartsus.com/) y /cabinet en
-   smartsus.com/cabinet/. Esto es una suposición, no una decisión confirmada — depende de
-   cómo se despliegue el sitio finalmente (ver sección 9, Fase 0).
+2. [RESUELTO 2026-07-31 — ver sección 3b] La estructura de dominio/URLs ya no es una
+   suposición: se decidió y se implementó.
 3. Falta configurar las herramientas gratuitas de Google/Bing (Search Console, Analytics,
    Google Business Profile) — no son algo que se pueda dejar listo en el código, requieren
    que tú (o quien administre el dominio/correo) las den de alta. Ver sección 8.
+
+===========================================================
+3b. ARQUITECTURA DEL SITIO (decidida y aplicada 2026-07-31)
+===========================================================
+Decisión: subdirectorio bajo el mismo dominio, NO subdominio ni sitio aparte. Un subdominio
+(ej. gabinetes.smartsus.com) se trata muchas veces como un sitio distinto y no comparte toda
+la autoridad/confianza del dominio raíz; un subdirectorio sí la hereda por completo. Para un
+sitio nuevo y pequeño, cada señal de autoridad que se pueda concentrar en un solo dominio
+importa — por eso la página de gabinetes vive DENTRO del mismo dominio, no aparte.
+
+Estructura final:
+- La carpeta /newPage es la que se publica como la raíz real del dominio:
+  smartsus.com/ = /newPage/index.html (antes vivía en /general, ya no se usa esa carpeta)
+  smartsus.com/control-de-bombas-y-sopladores/ = /newPage/control-de-bombas-y-sopladores/index.html
+    (antes vivía en /cabinet con el slug en inglés "cabinet"; se cambió a un slug en
+    español, descriptivo del producto, mejor para coincidir con lo que busca el cliente)
+  smartsus.com/aviso-privacidad/ = /newPage/aviso-privacidad/index.html (una sola página de
+    privacidad compartida — antes había una copia duplicada dentro de /cabinet, se eliminó
+    para no tener contenido duplicado)
+- robots.txt y sitemap.xml se movieron a /newPage/ (deben vivir en la raíz real del sitio
+  publicado, no en la raíz del repositorio de código).
+- Todos los enlaces cruzados entre ambas páginas (menú, pie de página, tarjetas de
+  "empieza aquí" / "vuelve a KAAB completo") se actualizaron a rutas relativas dentro de
+  /newPage, y las etiquetas canonical, Open Graph, Twitter y JSON-LD (BreadcrumbList,
+  Product) de la página de gabinetes se actualizaron a
+  https://smartsus.com/control-de-bombas-y-sopladores/.
+- Las carpetas /general y /cabinet quedaron obsoletas (son la versión anterior a esta
+  reestructura) — no deben usarse como referencia para copy o enlaces nuevos.
 
 ===========================================================
 4. SEO ON-PAGE — CHECKLIST EXPLICADO
@@ -192,7 +218,7 @@ Ideas de artículos/páginas por cada ICP (companyContext.txt sección 12):
 
 Cada artículo debe: (a) responder la pregunta de forma honesta y útil primero, (b) mencionar
 a Smartsus/KAAB de forma natural como una manera de resolverlo, (c) terminar con un enlace a
-la landing page correspondiente (general o cabinet). Esto es lo que en SEO se llama
+la landing page correspondiente (página principal o página de gabinetes). Esto es lo que en SEO se llama
 contenido "top of funnel": atrae a alguien que todavía está investigando, no listo para
 comprar, y lo va acercando.
 
@@ -270,8 +296,8 @@ equipo, no presupuesto de medios.
 ===========================================================
 FASE 0 — Fundación técnica (esta/próxima semana):
 - [Hecho 2026-07-30] Corregir largo de title/description en ambas páginas.
-- Decidir la estructura final de dominio/URLs (¿general/ va en la raíz? ¿cabinet/ en qué
-  ruta?) y actualizar canonical + sitemap.xml en consecuencia.
+- [Hecho 2026-07-31] Decidir y aplicar la estructura final de dominio/URLs: /newPage como
+  raíz publicada, gabinetes en subdirectorio con slug en español (ver sección 3b).
 - Comprimir las imágenes pesadas (sección 3, punto 1) antes de publicar.
 - Dar de alta Google Business Profile, Search Console y Analytics.
 - Publicar el sitio en el dominio real y enviar el sitemap.
@@ -309,10 +335,11 @@ FASE 3 — Amplificación (mes 4-6 en adelante, cuando ya haya una base orgánic
 ===========================================================
 11. PRIORIDAD INMEDIATA — qué hacer esta semana, en orden
 ===========================================================
-1. Decidir dominio/estructura de URLs final (bloquea el punto 2 y 3).
+1. [Hecho 2026-07-31] Estructura de dominio/URLs decidida y aplicada — ver sección 3b.
 2. Comprimir las imágenes más pesadas (>300 KB) con squoosh.app o tinypng.com.
-3. Publicar el sitio y dar de alta Google Business Profile + Search Console + Analytics.
-4. Enviar el sitemap.xml en Search Console.
+3. Publicar el contenido de /newPage en el dominio real y dar de alta Google Business
+   Profile + Search Console + Analytics.
+4. Enviar el sitemap.xml (ya está en /newPage/sitemap.xml) en Search Console.
 5. Pedir la primera reseña real a un cliente actual.
 
 ===========================================================
