@@ -1,0 +1,199 @@
+SMARTSUS — CONTEXTO DE EMPRESA (para lectura de IA / referencia rápida)
+Última actualización: 2026-07-30. Fuente: SmartsusJunio26.pdf (pitch deck, junio 2026) + landing page existente.
+
+===========================================================
+1. QUÉ ES SMARTSUS
+===========================================================
+Smartsus es una startup mexicana (deep tech / industria 4.0) que ofrece tecnología y
+expertise para AHORRAR AGUA Y ENERGÍA en plantas industriales, comerciales e
+institucionales. Detecta fallas en menos de un minuto usando IA e IoT.
+
+Tagline: "Tecnología y expertise para ahorrar agua y energía"
+Sub-tagline: "Detecta fallas en menos de un minuto con IA y IoT"
+Tagline sitio actual: "Control total de tu consumo de agua y energía en un solo lugar"
+
+Sitio web: https://smartsus.com
+Plataforma / demo: https://kaab.smartsus.com
+
+===========================================================
+2. UBICACIÓN Y ZONA DE OPERACIÓN
+===========================================================
+- Sede: Ciudad de México (CDMX), Iztapalapa.
+  Dirección legal: Privada las Cruces 3B, Col. San Juanico Nextipac, Iztapalapa, CDMX, CP 09400.
+- Cobertura de servicio declarada para SEO local: Ciudad de México, Estado de México,
+  Puebla y Aguascalientes (ya tienen un caso de éxito en una planta de tratamiento en
+  Aguascalientes — ver sección 8).
+- Referencia geo usada en el sitio: lat 19.432608, lon -99.133209 (CDMX).
+
+===========================================================
+3. EL PROBLEMA QUE RESUELVEN
+===========================================================
+La gestión de agua y energía es cada vez más difícil por:
+- Pérdidas ocultas y recurrentes (fugas, ineficiencias no detectadas)
+- Infraestructura obsoleta
+- Sistemas aislados y manuales (sin comunicación entre sí)
+- Datos incompletos o inexistentes
+- Recortes o falta de presupuesto
+
+Consecuencias para las plantas:
+- Ineficiencias operativas: 5%-30% de reducción de capacidad operativa.
+- Reparaciones inesperadas: $150K-$500K MXN en costos inesperados.
+- Reemplazo completo de equipo: $300K-$2,000K MXN de inversión.
+- Cada minuto de inactividad no planificada cuesta miles de pesos en producción perdida.
+
+===========================================================
+4. LA SOLUCIÓN: FRAMEWORK "NEXUS 360"
+===========================================================
+Acompañan al cliente de inicio a fin con la metodología NEXUS 360:
+- N - Navegar: consultoría estratégica y diagnóstico.
+- E - Equipar: integración de sensores actuales (IoT).
+- X - eXtraer: extracción de datos (IoT).
+- U - Unificar: monitoreo centralizado en tiempo real (Web).
+- S - Supervisar: predicción y alertas con IA.
+- 360: optimización con IA y simulación con gemelos digitales (ciclo continuo).
+
+===========================================================
+5. PLATAFORMA / PRODUCTO: KAAB
+===========================================================
+Nombre de la plataforma web: KAAB (kaab.smartsus.com).
+Modelo de negocio de la plataforma: HSaaS (Hardware & Software as a Service).
+- Se contrata como OPEX, no CAPEX.
+- Incluye hardware (sensores/dispositivos propios), instalación, mantenimiento y reparación.
+- Duración de contrato mínima: 3 años.
+
+Capacidades / módulos de la plataforma:
+- Dashboards interactivos y personalizables (widgets de indicadores, gráficas, diagramas).
+- Reportes automatizados (exportación a PDF vía Email o Drive).
+- Alertas y notificaciones de fallas en tiempo real vía WhatsApp y Telegram (<1 minuto).
+- Mapa: lectura de sensores geolocalizados a lo largo del país (múltiples ramales/sitios).
+- Diagramas: rebombeos, tanques, pozos, hidroneumáticos, HVACs, subestaciones, plantas de
+  emergencia — y la interacción entre ellos, con vista en tiempo real.
+- Análisis: gráficas inmediatas, simulaciones y proyecciones de comportamiento con IA.
+- Dispositivos: lectura de sensores (KW/h, L/s, °C, estado de bombas, presión, ciclos, etc.).
+- Control & Automatización: control remoto de bombas y válvulas.
+- Modelos IA: análisis multivariable, predicciones, simulación de escenarios ("gemelos
+  digitales").
+- Accesos personalizados: permisos por región, sensor, sitio, indicador o comando.
+- Indicadores personalizados: promedios y totales por hora/día, encendido/apagado
+  programado, huella de carbono, indicadores a la medida.
+- Alertas configurables: valores fuera de rango, fallo de sensores, consumo fuera de horario.
+
+===========================================================
+6. MODELO DE NEGOCIO (B2B)
+===========================================================
+Tres líneas de servicio, con el SaaS como ingreso "core":
+1. Software as a Service (Core Revenue): Web App (plataforma KAAB) + módulos adicionales.
+2. Consultoría: ingeniería de detalle, diseño de instrumentación y comunicación.
+3. Integración: proyecto llave en mano — integración de infraestructura actual o de nueva
+   infraestructura (hardware + sensores).
+
+===========================================================
+7. DIFERENCIADORES vs. COMPETENCIA
+(vs. OEM tradicional, consultoras, software genérico)
+===========================================================
+- Nexo agua-energía en una sola plataforma (no solo uno de los dos).
+- Compatible con infraestructura existente del cliente (no requiere reemplazo total).
+- Integración abierta con otros sistemas / sensores de cualquier marca (+15 marcas, +18
+  tipos de sensor probados).
+- Hardware propio de bajo costo.
+- Implementación en menos de 2 meses.
+- ROI estimado en 18 meses.
+
+===========================================================
+8. TRACCIÓN Y CASOS DE USO (a junio 2026)
+===========================================================
+Clientes / instituciones donde la plataforma opera o está en implementación:
+- Tecnológico de Monterrey
+- Soriana
+- Instituto del Agua del Estado (Aguascalientes)
+- Angelópolis Lifestyle Center (Puebla)
+- DIGATEM México
+
+Reconocimientos / convocatorias de innovación en las que han participado:
+- Aquavance
+- Aliar
+- Water Disruption Challenge
+- Catalyst (Catal1.5t)
+- Innodrop (incubadora de talento hídrico)
+
+Métricas actuales de monitoreo:
+- 20,000 m² de área total monitoreada.
+- 3,000 variables gestionadas cada minuto.
+- +200 sensores de 15 marcas diferentes, +18 tipos de sensor.
+- 30 usuarios activos en plataforma.
+- 200 millones de datos históricos almacenados.
+- 150 KPIs automatizados.
+- 3,500 alertas enviadas por Telegram y WhatsApp.
+
+Impacto acumulado generado:
+- Ahorro de agua: -9% anual.
+- Ahorro de energía: -10% anual.
+- Ahorro económico: ~$100K MXN anuales (por sitio/piloto).
+
+Caso de éxito destacado: Planta de tratamiento de aguas de 2,000 lps en Aguascalientes.
+- Problema: intermitencia en el flujo del efluente; dejaba de tratar 1.2 millones de litros
+  por cada hora fuera de servicio.
+- Retos previos: presupuesto limitado, medidores/sensores sin conexión a internet, sin red
+  wifi interna, equipos con medidores aislados, reporteo manual de consumos hídricos, sin
+  medición de consumo energético.
+- Logros: adquisición de datos del 80% de los equipos de alto consumo; identificación y
+  recomendaciones para optimizar equipos críticos; toda la información de agua, energía,
+  presión y temperatura concentrada en una sola plataforma web; alertas para reducir el
+  tiempo sin tratamiento de agua.
+
+===========================================================
+9. EQUIPO
+===========================================================
+- Dante Chavarría — PhD Industria 4.0 y desarrollo de IoT.
+- Daniel Chavarría — PhD Inteligencia Artificial Aplicada.
+- David Barrientos — COO & Co-Founder, PhD Algoritmos para optimización de agua.
+  Contacto: david@smartsus.com / david.barrientos@smartsus.com, 55-1254-9706.
+- Javier Agustín — Director de Estrategia, MBA/MS SMIB Economía Circular.
+  Contacto: javier.agustin@smartsus.com.
+- Ángel Calderón — MsC Energías Renovables.
+- Ing. Ariadna, Ing. Vanesa, MBA Ossmara Del Ángel — equipo operativo/ingeniería.
+
+Credenciales del equipo:
+- Desarrollo tecnológico: +10 años de investigación, 10 publicaciones científicas en IA,
+  Industria 4.0, automatización y control, diseño de productos inteligentes, sensing,
+  algoritmos de detección de fugas.
+- Experiencia probada: +20 años en el sector hídrico y energético; +100 sitios
+  instrumentados y comunicados; +10 proyectos en la red hidráulica de CDMX; +100 proyectos
+  de equipamiento a PTAR (plantas de tratamiento de aguas residuales); puesta en operación
+  de equipos en USA, Argentina, Singapur, Arabia Saudita, Israel e Inglaterra.
+
+===========================================================
+10. CONTACTO OFICIAL
+===========================================================
+- Web: www.smartsus.com
+- Email general: contacto@smartsus.com
+- Email co-founder: david@smartsus.com (también david.barrientos@smartsus.com)
+- Teléfono: +52 55 1254 9706
+- Redes: LinkedIn (linkedin.com/company/smartsus), YouTube (@smartsus),
+  Instagram (instagram.com/smartsus)
+- Dirección: Privada las Cruces 3B, Col. San Juanico Nextipac, Iztapalapa, CDMX, CP 09400.
+
+===========================================================
+11. TONO DE MARCA Y MENSAJES CLAVE
+===========================================================
+- Enfoque en resultados medibles: % de ahorro de agua/energía, tiempo de detección de
+  fallas (<1 min), ROI en 18 meses, implementación en <2 meses.
+- Mensaje central: "control total", "de inicio a fin", "un solo lugar" — integran todo lo
+  que hoy está disperso (sensores de distintas marcas, reportes manuales, sistemas
+  aislados) en una sola plataforma.
+- Evitan hablar de tecnología per se; hablan del dolor de negocio (OPEX que se va en fallas,
+  reemplazos de equipo, producción perdida) y de cómo la IA/IoT lo resuelve.
+- Color primario de marca: azul (#1266F1), degradado a azul oscuro (#0F52C7). Tipografía:
+  Inter. Logo: rayo/ala estilizada en azul.
+- Cierre de pitch: "¡Construyamos juntos un futuro donde el agua se gestione de forma
+  inteligente y sostenible!"
+
+===========================================================
+12. NOTA PARA LA IA QUE LEA ESTE ARCHIVO
+===========================================================
+Este documento resume el pitch deck de junio 2026 y el sitio web existente. El pitch deck
+está enfocado 100% en agua y energía (bombeo, PTAR, HVAC, subestaciones). NO menciona
+gabinetes industriales de control para bombas o sopladores (blowers) como línea de
+producto — esa es una nueva vertical de negocio que se está lanzando con una landing page
+dedicada (ver carpeta /cabinet), y su contenido técnico específico vino directamente del
+usuario, no de este PDF.
