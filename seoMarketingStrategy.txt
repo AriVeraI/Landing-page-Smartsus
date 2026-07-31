@@ -1,0 +1,328 @@
+SMARTSUS — ESTRATEGIA DE SEO Y MARKETING DE BAJO COSTO (para lectura de IA / referencia rápida)
+Última actualización: 2026-07-30.
+Complementa a companyContext.txt (léelo primero: ahí están el negocio, los ICP, el
+posicionamiento y las metas). Este documento es el "cómo hacer que nos encuentren".
+
+===========================================================
+1. ¿QUÉ ES SEO? (EXPLICACIÓN SIMPLE, PARA ALGUIEN QUE EMPIEZA)
+===========================================================
+SEO = "Search Engine Optimization" (optimización para motores de búsqueda). En términos
+simples: es todo lo que haces para que Google te muestre primero, GRATIS, cuando alguien
+busca algo relacionado con tu negocio — en vez de pagarle a Google por un anuncio.
+
+Piénsalo como una tienda física:
+- Los ANUNCIOS PAGADOS (Google Ads) son como pagar un espectacular en la carretera: apareces
+  mientras pagas, y en cuanto dejas de pagar, desapareces.
+- El SEO es como que tu tienda esté bien ubicada, bien señalizada y con buenas reseñas: te
+  toma más tiempo construirlo, pero una vez que lo logras, te sigue trayendo clientes todos
+  los días sin pagar por cada visita.
+
+SEO tiene tres patas, y las tres importan:
+1. SEO TÉCNICO: que Google pueda "leer" tu página sin problemas (velocidad de carga,
+   etiquetas correctas, que funcione en celular, que no tenga errores). Ver sección 3-4.
+2. CONTENIDO Y PALABRAS CLAVE: que tu página use las palabras exactas que tu cliente
+   escribe en Google cuando tiene el problema que tú resuelves. Ver sección 6.
+3. AUTORIDAD (backlinks y reputación): que otros sitios confiables mencionen o enlacen tu
+   sitio, y que tengas presencia consistente (Google Business Profile, reseñas, redes).
+   Ver secciones 5 y 7.
+
+===========================================================
+2. CÓMO FUNCIONA GOOGLE (LO BÁSICO QUE NECESITAS SABER)
+===========================================================
+Google hace tres cosas, en este orden:
+1. RASTREAR (crawling): un robot de Google visita tu página y sigue los enlaces que
+   encuentra. Por eso importan el sitemap.xml y el robots.txt (le dicen al robot qué
+   páginas existen y cuáles puede visitar).
+2. INDEXAR (indexing): guarda una copia de tu página en su base de datos y trata de
+   entender de qué trata (usando el título, los encabezados, el texto, las etiquetas).
+3. RANKEAR (ranking): cuando alguien busca algo, decide en qué orden mostrar las páginas
+   indexadas que le parecen relevantes. Aquí es donde compites contra otros sitios.
+
+Lo que más pesa hoy para rankear bien (de forma simplificada):
+- Relevancia: que tu contenido realmente responda lo que la persona buscó.
+- Experiencia de la página: que cargue rápido, funcione bien en celular, no tenga errores.
+- Autoridad/confianza: que otros sitios te enlacen y que tengas señales de negocio real
+  (Google Business Profile, reseñas, presencia consistente).
+- Señales locales: para búsquedas como "gabinete de control para bombas en CDMX", Google
+  también usa tu ubicación registrada y qué tan cerca estás de quien busca.
+
+Importante: el "Mapa" o "paquete local" (los 3 resultados con mapa que aparecen arriba en
+búsquedas locales) depende MUCHO de tu Google Business Profile, no solo de tu página web.
+Para un negocio B2B regional como Smartsus, esto suele ser más rentable que competir por
+posiciones orgánicas genéricas. Ver sección 5.
+
+===========================================================
+3. AUDITORÍA TÉCNICA ACTUAL (2026-07-30) — qué ya está bien y qué se corrigió hoy
+===========================================================
+Ya estaba bien implementado en /general y /cabinet:
+- Meta tags completos (title, description, keywords, robots, canonical, geo).
+- Open Graph y Twitter Cards (para que se vea bien al compartir en redes/WhatsApp).
+- Datos estructurados Schema.org (JSON-LD) válidos: Organization, WebSite,
+  SoftwareApplication en /general; Product y BreadcrumbList en /cabinet. Se verificaron con
+  un parser JSON y los 5 bloques son válidos.
+- Un solo <h1> por página (correcto — nunca debe haber más de uno).
+- Todas las imágenes tienen atributo alt descriptivo (bueno para accesibilidad y para
+  "Google Imágenes").
+- robots.txt y sitemap.xml existentes en la raíz del repo.
+
+Se corrigió HOY (2026-07-30) porque Google corta el texto si es muy largo:
+- Title de /general: medía 73 caracteres (Google muestra ~55-60 antes de cortar) → se
+  redujo a 46: "Smartsus | Conecta agua, HVAC y energía con IA".
+- Meta description de /general: medía 259 caracteres (el límite práctico es ~150-160) → se
+  redujo a 149.
+- Title de /cabinet: medía 91 caracteres → se redujo a 54: "Gabinetes de Control Smartsus
+  para Bombas y Sopladores".
+- Meta description de /cabinet: medía 247 caracteres → se redujo a 155.
+- Se acortaron también las descripciones de Open Graph que estaban muy largas.
+
+Pendiente de resolver (esto SÍ requiere trabajo o una decisión tuya, no se hizo solo):
+1. PESO DE LAS IMÁGENES: varias capturas de pantalla pesan entre 350 KB y 865 KB cada una
+   (KAAB-Diagramas.png pesa 865 KB, KAAB-Dispositivos.png 744 KB, etc.). Una página que carga
+   3-4 MB de imágenes en el hero es lenta, y la velocidad de carga SÍ afecta el ranking
+   (Core Web Vitals de Google) y la tasa de rebote. No hay una herramienta de compresión de
+   imágenes disponible en este entorno de trabajo — hay que comprimirlas manualmente antes
+   de publicar, con alguna de estas opciones gratuitas:
+   - squoosh.app (de Google, arrastra y suelta, sin instalar nada)
+   - tinypng.com
+   - convertir capturas de pantalla grandes a formato WebP (mismo detalle visual, 30-70%
+     menos peso)
+   Meta razonable: ninguna imagen de la página debería pesar más de ~150-200 KB.
+2. ESTRUCTURA DE DOMINIO/URLS: el sitemap.xml y las etiquetas canonical de /general asumen
+   que esa carpeta se va a publicar en la raíz del dominio (smartsus.com/) y /cabinet en
+   smartsus.com/cabinet/. Esto es una suposición, no una decisión confirmada — depende de
+   cómo se despliegue el sitio finalmente (ver sección 9, Fase 0).
+3. Falta configurar las herramientas gratuitas de Google/Bing (Search Console, Analytics,
+   Google Business Profile) — no son algo que se pueda dejar listo en el código, requieren
+   que tú (o quien administre el dominio/correo) las den de alta. Ver sección 8.
+
+===========================================================
+4. SEO ON-PAGE — CHECKLIST EXPLICADO
+===========================================================
+Esto es lo que ya tienen las páginas y por qué importa cada cosa (para que lo entiendas, no
+solo para que confíes en que "ya está"):
+
+- <title>: es el texto azul que aparece en Google y en la pestaña del navegador. Debe tener
+  la palabra clave principal y quedar corto (~50-60 caracteres) para no cortarse.
+- Meta description: el resumen gris debajo del título en Google. No mejora el ranking
+  directamente, pero si es bueno mejora cuánta gente le da clic (esto sí importa muchísimo).
+- Canonical: le dice a Google "esta es la versión oficial de esta página", para evitar que
+  penalice por contenido duplicado si la misma página es accesible por más de una URL.
+- Encabezados (H1, H2, H3): deben ir en orden (como un índice: un solo H1 con el tema
+  principal, H2 para cada sección, H3 para subsecciones). Ya está correcto en ambas páginas.
+- Texto alt en imágenes: describe la imagen para quien no puede verla (lectores de pantalla)
+  y ayuda a que la imagen aparezca en Google Imágenes. Ya está correcto.
+- Datos estructurados (Schema.org / JSON-LD): es información en un formato que Google
+  entiende directamente (nombre de la empresa, dirección, teléfono, tipo de producto). Ayuda
+  a que aparezcan "rich results" (estrellitas, dirección, etc. directo en el resultado de
+  búsqueda). Ya implementado y validado.
+- robots.txt / sitemap.xml: le dicen a Google qué páginas existen y que puede visitarlas
+  todas. Ya existen, pendiente de ajustar URLs reales (ver sección 3, punto 2).
+- Meta "keywords": Google la IGNORA desde hace más de 10 años — no ayuda al ranking. Se deja
+  en el código por costumbre/compatibilidad con otros buscadores menores, pero no le dediques
+  tiempo a esto.
+
+===========================================================
+5. SEO LOCAL: LO MÁS RENTABLE PARA UN B2B REGIONAL COMO SMARTSUS
+===========================================================
+Para un negocio que vende a plantas en CDMX, Estado de México, Puebla y Aguascalientes, el
+SEO local suele ganar más clientes, más rápido y más barato que competir por palabras
+genéricas contra empresas grandes. Esto es lo más importante y accionable AHORA:
+
+1. GOOGLE BUSINESS PROFILE (antes "Google My Business") — GRATIS, y es probablemente la
+   acción de mayor impacto que puedes hacer esta semana.
+   - Crea/reclama el perfil de Smartsus en business.google.com con la dirección de
+     Iztapalapa, teléfono, horario, categoría de negocio (ej. "Servicio de automatización
+     industrial" / "Ingeniería").
+   - Agrega fotos reales de tu equipo, instalaciones y gabinetes (no capturas de pantalla).
+   - Publica actualizaciones cada semana o dos (como si fuera una mini-red social: casos de
+     éxito, fotos de instalación, el video de YouTube).
+   - Pide reseñas a los clientes reales (Tec de Monterrey, AquaCapital, Instituto del Agua,
+     Angelópolis, DIGATEM) — una reseña con nombre real vale más que cualquier badge de logo
+     en la página web.
+   - Si el servicio se da en más de una ciudad de forma constante, evalúa si conviene marcar
+     "área de servicio" (service area business) en vez de solo un punto en el mapa.
+
+2. CONSISTENCIA NAP (Name, Address, Phone): el nombre de la empresa, la dirección y el
+   teléfono deben escribirse EXACTAMENTE igual en todos lados (sitio web, Google Business
+   Profile, redes sociales, directorios). Si en un lugar dice "+52 55 1254 9706" y en otro
+   "5512549706", a Google le cuesta más confirmar que es el mismo negocio.
+
+3. DIRECTORIOS Y CITAS LOCALES (gratis): dar de alta a Smartsus en directorios de negocios
+   mexicanos e industriales (páginas amarillas digitales, cámaras industriales/CANIETI,
+   directorios de proveedores de agua/energía, LinkedIn Company Page). Cada uno es un
+   enlace/mención más que refuerza que el negocio es real.
+
+4. RESEÑAS: pedir activamente reseñas después de cada proyecto/piloto exitoso. Un flujo
+   simple: al cerrar un piloto, mandar un WhatsApp con el link directo para calificar en
+   Google. Esto también alimenta el testimonio real que ya tienes (ver companyContext.txt,
+   sección 8) — vale la pena convertirlo en una reseña pública si el cliente lo autoriza.
+
+===========================================================
+6. ESTRATEGIA DE CONTENIDO Y PALABRAS CLAVE (basada en los ICP de companyContext.txt)
+===========================================================
+Hoy el sitio son dos páginas (landing de KAAB y landing de gabinetes). Eso es suficiente
+para que alguien que YA sabe que existes te encuentre, pero es poco contenido para que
+Google te posicione en búsquedas nuevas. La forma más barata de crecer en SEO orgánico es
+agregar contenido (un blog o sección de "Recursos") que responda preguntas reales que hace
+cada perfil de comprador (ICP) antes de buscar una solución como la tuya.
+
+Ideas de artículos/páginas por cada ICP (companyContext.txt sección 12):
+
+- Gerente/Jefe de mantenimiento u operaciones:
+  · "Cómo evitar paros no programados en bombas de agua"
+  · "Qué es la rotación automática de bombas y por qué evita que se quemen"
+  · "Alarmas de bombeo: qué debería avisarte tu tablero de control"
+
+- Director de planta / gerente general:
+  · "Cuánto cuesta realmente una falla no planificada en tu planta (y cómo evitarla)"
+  · "CAPEX vs. OPEX: cómo elegir el modelo de pago para modernizar tu planta"
+  · "ROI de monitoreo de agua y energía: qué esperar en 18 meses"
+
+- Responsable de sustentabilidad / ESG:
+  · "Cómo reportar ahorro de agua y energía sin hojas de cálculo"
+  · "Huella de carbono en plantas industriales: cómo medirla automáticamente"
+
+- Especialista en demanda eléctrica / tarifas CFE (perfil candidato):
+  · "Qué es el control en punta y cuánto puedes ahorrar evitando penalizaciones CFE"
+  · "Tarifa GDMTH/DAC: cómo leer tu recibo de luz y encontrar ahorro oculto"
+
+- Organismo operador de agua (perfil candidato):
+  · "Cómo monitorear una PTAR con presupuesto limitado"
+  · "Continuidad del servicio de agua: alertas que evitan interrupciones públicas"
+
+Cada artículo debe: (a) responder la pregunta de forma honesta y útil primero, (b) mencionar
+a Smartsus/KAAB de forma natural como una manera de resolverlo, (c) terminar con un enlace a
+la landing page correspondiente (general o cabinet). Esto es lo que en SEO se llama
+contenido "top of funnel": atrae a alguien que todavía está investigando, no listo para
+comprar, y lo va acercando.
+
+Palabras clave ya cubiertas en las landing pages (no repetir esfuerzo, ya están en el
+<title>/description/keywords de ambas páginas): monitoreo industrial IoT, ahorro de agua y
+energía, gabinete de control para bombas, variador de frecuencia, control en punta, PTAR,
+CDMX/Edomex/Puebla/Aguascalientes.
+
+===========================================================
+7. ESTRATEGIA DE MARKETING DE BAJO COSTO (más allá de SEO)
+===========================================================
+Todo lo de aquí abajo tiene costo económico bajo o nulo — el costo real es tiempo del
+equipo, no presupuesto de medios.
+
+1. LINKEDIN (el canal más natural para un B2B industrial):
+   - Perfiles personales de los integrantes del equipo publicando contenido (casos de éxito,
+     aprendizajes técnicos, fotos de instalación) suelen tener MÁS alcance orgánico que la
+     página de empresa. Recomendado: que 1-2 personas del equipo publiquen 1-2 veces por
+     semana.
+   - Página de empresa de Smartsus, enlazada desde el sitio (ya está en el schema.org).
+
+2. YOUTUBE: ya existen dos videos (demo de KAAB y de los gabinetes, ver companyContext.txt
+   sección 16). Reutilízalos: en LinkedIn, en el Google Business Profile, en respuestas de
+   WhatsApp a prospectos que preguntan "¿cómo funciona esto?". Considera 1-2 videos cortos
+   adicionales (30-60 seg) mostrando una sola alerta llegando al celular — ese tipo de clip
+   corto funciona muy bien como contenido de redes.
+
+3. WHATSAPP BUSINESS: ya es el canal de alertas del producto —úsalo también como canal de
+   ventas/soporte con catálogo de servicios, mensajes de bienvenida automáticos y respuestas
+   rápidas a preguntas frecuentes.
+
+4. CASOS DE ÉXITO EN PDF: convertir el caso de Aguascalientes (companyContext.txt sección 8)
+   en un PDF descargable de 1-2 páginas. Sirve como (a) contenido para LinkedIn, (b) material
+   de venta para reuniones, (c) el "gancho de entrada de bajo compromiso" que se identificó
+   como pendiente en companyContext.txt sección 14, punto 5.
+
+5. REFERIDOS: pedir explícitamente a clientes actuales (Tec de Monterrey, AquaCapital,
+   Instituto del Agua, Angelópolis, DIGATEM) una referencia a otra planta/sitio que conozcan
+   con el mismo dolor. En B2B industrial, la referencia de otro cliente suele cerrar más
+   rápido que cualquier canal digital.
+
+6. ALIANZAS: aunque integradores/OEMs no son el comprador principal hoy (companyContext.txt
+   sección 12), sí pueden ser una fuente de referidos — vale la pena mapear 3-5 despachos de
+   ingeniería o integradores en las 4 entidades de cobertura y ofrecerles una relación de
+   referidos (no de reventa) sin que eso cambie el mensaje de las landing pages.
+
+7. EVENTOS Y CONVOCATORIAS: seguir participando en programas como Aliar, Catalyst, Innodrop,
+   Water Disruption Challenge (companyContext.txt sección 8) — además de la tracción/
+   validación, casi siempre dan visibilidad y contactos gratis.
+
+8. EMAIL: si ya se recopilan correos de prospectos vía el formulario de contacto, vale la
+   pena un newsletter simple (mensual) con 1 caso de éxito o 1 tip — Mailchimp u otro tiene
+   plan gratuito hasta cierto número de contactos.
+
+===========================================================
+8. HERRAMIENTAS GRATUITAS QUE HAY QUE CONFIGURAR (no requieren presupuesto)
+===========================================================
+1. Google Search Console (search.google.com/search-console): verificar la propiedad del
+   dominio y enviar el sitemap.xml. Aquí es donde ves qué búsquedas te traen visitas, qué
+   páginas indexó Google, y si hay errores técnicos.
+2. Google Analytics 4: para ver cuánta gente visita el sitio, de dónde viene, y si llega al
+   formulario de contacto.
+3. Google Business Profile (ver sección 5) — es, de todas estas, la que más impacto directo
+   tiene para un negocio local/regional.
+4. Bing Webmaster Tools: menos tráfico que Google en México, pero es gratis y toma minutos
+   configurarlo una vez que ya tienes el sitemap listo.
+5. Rich Results Test (search.google.com/test/rich-results): pega la URL de cada página ahí
+   para confirmar que Google puede leer correctamente los datos estructurados (Organization,
+   Product, etc.) una vez que el sitio esté publicado en un dominio real.
+6. Meta Business Suite: para administrar Facebook/Instagram si se usan, y como otro canal de
+   WhatsApp Business.
+
+===========================================================
+9. FASES / ROADMAP (0-12 meses)
+===========================================================
+FASE 0 — Fundación técnica (esta/próxima semana):
+- [Hecho 2026-07-30] Corregir largo de title/description en ambas páginas.
+- Decidir la estructura final de dominio/URLs (¿general/ va en la raíz? ¿cabinet/ en qué
+  ruta?) y actualizar canonical + sitemap.xml en consecuencia.
+- Comprimir las imágenes pesadas (sección 3, punto 1) antes de publicar.
+- Dar de alta Google Business Profile, Search Console y Analytics.
+- Publicar el sitio en el dominio real y enviar el sitemap.
+
+FASE 1 — SEO local y prueba social (mes 1-2):
+- Pedir las primeras reseñas reales en Google Business Profile a los clientes actuales.
+- Reemplazar los badges de texto de clientes por logos reales (companyContext.txt sección
+  14, punto 6) si los clientes autorizan su uso.
+- Publicar el PDF del caso de éxito de Aguascalientes como primer lead magnet.
+- Dar de alta a Smartsus en 3-5 directorios/citas locales relevantes.
+
+FASE 2 — Contenido y autoridad (mes 2-4):
+- Publicar los primeros 4-6 artículos de la sección 6 (uno por ICP como mínimo).
+- Ritmo de publicación en LinkedIn (personal + empresa) 1-2 veces por semana.
+- Empezar a mapear alianzas de referidos con integradores/despachos (sección 7, punto 6).
+
+FASE 3 — Amplificación (mes 4-6 en adelante, cuando ya haya una base orgánica):
+- Considerar un presupuesto pequeño de Google Ads/LinkedIn Ads dirigido SOLO a las
+  búsquedas de mayor intención (ej. "gabinete de control para bombas CDMX"), no a términos
+  genéricos caros.
+- Remarketing a quien visitó el sitio pero no llenó el formulario.
+- Evaluar un programa formal de referidos con incentivo para clientes actuales.
+
+===========================================================
+10. MÉTRICAS A VIGILAR (KPIs)
+===========================================================
+- Impresiones y clics por palabra clave (Google Search Console).
+- Posición promedio para las palabras clave objetivo (sección 6).
+- Llamadas / solicitudes de ruta desde Google Business Profile.
+- Tasa de conversión del formulario de contacto (visitas → solicitudes de demo/cotización).
+- Número de reseñas y calificación promedio en Google Business Profile.
+- Núm. de piezas de contenido publicadas (artículos, videos, posts) por mes — es un
+  indicador de esfuerzo, no de resultado, pero si esto es cero, todo lo demás también lo será.
+
+===========================================================
+11. PRIORIDAD INMEDIATA — qué hacer esta semana, en orden
+===========================================================
+1. Decidir dominio/estructura de URLs final (bloquea el punto 2 y 3).
+2. Comprimir las imágenes más pesadas (>300 KB) con squoosh.app o tinypng.com.
+3. Publicar el sitio y dar de alta Google Business Profile + Search Console + Analytics.
+4. Enviar el sitemap.xml en Search Console.
+5. Pedir la primera reseña real a un cliente actual.
+
+===========================================================
+12. NOTA PARA LA IA QUE LEA ESTE ARCHIVO
+===========================================================
+Este documento es la contraparte de estrategia de SEO/marketing de companyContext.txt y
+tiene el mismo nivel de autoridad. Antes de recomendar una palabra clave, un ICP o un dato
+de tracción, revisa companyContext.txt (ahí vive la fuente de verdad del negocio). Antes de
+afirmar que una etiqueta SEO "ya está lista", vuelve a medir el archivo real (título,
+descripción, JSON-LD) en vez de asumir que sigue igual — este archivo registra el estado al
+2026-07-30, pero el código puede haber cambiado después. Las cifras en KB de las imágenes y
+los largos de title/description en la sección 3 son medidas reales tomadas ese día con un
+script, no estimaciones.
