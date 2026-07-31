@@ -227,6 +227,14 @@ Palabras clave ya cubiertas en las landing pages (no repetir esfuerzo, ya están
 energía, gabinete de control para bombas, variador de frecuencia, control en punta, PTAR,
 CDMX/Edomex/Puebla/Aguascalientes.
 
+Nota importante al redactar contenido sobre los gabinetes (blog, anuncios, propuestas): el
+variador de frecuencia (VFD) y el HMI touchscreen son válidos como palabras clave a atacar
+(la gente sí busca "variador de frecuencia para bombas"), pero NO se deben presentar como
+componentes fijos/garantizados del gabinete al escribir el contenido — son configurables
+caso por caso (ver companyContext.txt, sección 13b). Igual con la conectividad a KAAB: es
+opcional mencionarla como incluida por default, aunque comercialmente conviene recomendarla
+siempre.
+
 ===========================================================
 7. ESTRATEGIA DE MARKETING DE BAJO COSTO (más allá de SEO)
 ===========================================================

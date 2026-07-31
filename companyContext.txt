@@ -192,14 +192,25 @@ Caso de éxito destacado: Planta de tratamiento de aguas de 2,000 lps en Aguasca
   ADICIONAL al ahorro económico general de ~$100K MXN anuales reportado arriba — no lo
   sustituye ni se debe confundir con él.
 
-Testimonio real de cliente (Tecnológico de Monterrey):
-"Es como si el sistema de HVAC me hablara: todo me llega a mi celular — cuándo se prende,
-qué está pasando — sin necesidad de estar al pendiente de la plataforma."
-— Operador del sistema de HVAC, Tecnológico de Monterrey.
-Nota: cita parafraseada por el fundador a partir de una conversación directa con el cliente,
-sin nombre propio disponible. Es una cita real (no inventada), pero antes de publicarla de
-forma verbatim y atribuida en materiales formales (no solo en el sitio web), lo ideal es
-obtener confirmación por escrito del cliente.
+Testimonios reales de clientes (parafraseados por el fundador a partir de conversaciones
+directas, sin nombre propio disponible en ninguno de los tres casos — son citas reales, no
+inventadas, pero antes de publicarlas de forma verbatim y atribuida en materiales formales
+(no solo en el sitio web), lo ideal es obtener confirmación por escrito de cada cliente):
+
+1. Tecnológico de Monterrey:
+   "Es como si el sistema de HVAC me hablara: todo me llega a mi celular — cuándo se prende,
+   qué está pasando — sin necesidad de estar al pendiente de la plataforma."
+   — Operador del sistema de HVAC, Tecnológico de Monterrey.
+
+2. AquaCapital:
+   "Recibir el pronóstico del clima por correo permite que el personal esté preparado para
+   operar correctamente las plantas de recolección de agua."
+   — Directora, AquaCapital.
+
+3. Instituto del Agua del Estado (Aguascalientes):
+   "Con la visualización en tiempo real puedo ver la eficiencia de la planta, lo que me
+   permite saber qué tan bien está trabajando en cada momento."
+   — Directivo, Instituto del Agua del Estado de Aguascalientes.
 
 ===========================================================
 9. EQUIPO
@@ -338,6 +349,42 @@ Otros posibles ganchos de entrada a explorar (además del gabinete), propuestos 
   mantenimiento aunque el cliente todavía no tenga sensores instalados.
 - Simulador gratuito del módulo de Proyectos: estima el ahorro de un proyecto (ej. cambio de
   luminarias) antes de que el cliente se comprometa a nada.
+
+===========================================================
+13b. CONFIGURACIÓN REAL DEL GABINETE (no sobre-prometer componentes fijos)
+===========================================================
+Aclarado el 2026-07-31. El gabinete NO es un producto de una sola configuración fija —
+varios de sus componentes son opcionales y se deciden caso por caso según la aplicación.
+Esto es importante: el copy de venta y las landing pages no deben presentar VFD, HMI o la
+conectividad como partes garantizadas de "el gabinete", porque no siempre es así.
+
+- PLC de control: es el ÚNICO componente que SIEMPRE está presente — es el "cerebro" del
+  gabinete (lógica de rotación, alternancia, protecciones y alarmas).
+- Arranque y control del motor — NO siempre es un variador de frecuencia (VFD):
+  · Para bombas de baja potencia, el control puede ser directo por contactor (arranque
+    directo, más simple y económico).
+  · El VFD se usa cuando se necesita arranque suave, control de velocidad o ahorro de
+    energía variable.
+  · Se decide caso por caso según la aplicación y la potencia del motor — VFD es una opción,
+    no un estándar.
+- Interfaz de operación local — la HMI touchscreen es OPCIONAL, no el default:
+  · La preferencia de Smartsus es dar acceso de configuración y monitoreo vía un servidor
+    web integrado en el propio gabinete, accesible desde el celular, sin necesidad de una
+    pantalla física instalada en sitio.
+  · Si el cliente lo pide explícitamente, también se puede integrar una HMI touchscreen
+    local además del servidor web.
+- Conectividad/comunicación hacia la plataforma KAAB: es OPCIONAL, no un componente fijo de
+  cada gabinete.
+  · Nota de estrategia importante: esta conectividad es justo lo que hace que el gabinete
+    funcione como "puerta de entrada" hacia KAAB (ver sección 13). Por eso, aunque es
+    técnicamente opcional, en la conversación de venta conviene OFRECERLA ACTIVAMENTE y
+    recomendarla, no dejarla como una opción pasiva más de la lista.
+
+Implicación para el copy (landing pages, ventas, propuestas): todo gabinete incluye como
+base PLC + arranque/control (contactor o VFD, según aplique) + protecciones eléctricas +
+diseño a la medida. VFD, HMI touchscreen y conectividad a KAAB se describen como
+configurables/opcionales según la necesidad del cliente, con la conectividad recomendada
+como parte del valor central de la oferta.
 
 ===========================================================
 14. OPORTUNIDADES DE MEJORA EN COMUNICACIÓN (auditoría 2026-07-30)
