@@ -250,14 +250,13 @@ body {
   transform: translateY(-4px);
 }
 .service-image {
-  width: 100%;
+  aspect-ratio: 1 / 1;
   background: #fff;
   overflow: hidden;
 }
 .service-image img {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .service-content {
   padding: 1rem;
@@ -446,89 +445,7 @@ body {
   background: #eff6ff;
 }
 
-/* ---------- NEXUS 360 methodology ---------- */
-.nexus-track {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.nexus-step {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  background: #fff;
-  border: 1px solid #f3f4f6;
-  border-radius: 1rem;
-  padding: 1.25rem 1.5rem;
-  box-shadow: 0 4px 6px -4px rgba(0,0,0,0.06);
-}
-.nexus-letter {
-  flex-shrink: 0;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.35rem;
-  color: #fff;
-}
-.nexus-360-badge {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  max-width: 260px;
-  margin: 0 auto;
-  border-radius: 9999px;
-  border: 10px solid var(--color-prim);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1.5rem;
-}
-
-/* ---------- Client / trust logo strip ---------- */
-.logo-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.logo-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.85rem 1.5rem;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
-  color: #374151;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-align: center;
-  min-height: 4rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-.logo-badge:hover {
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
-}
-
-/* ---------- Impact cards (light) ---------- */
-.impact-card {
-  background: #fff;
-  border: 1px solid #f3f4f6;
-  border-radius: 1rem;
-  padding: 2rem;
-  text-align: center;
-  height: 100%;
-  box-shadow: 0 4px 6px -4px rgba(0,0,0,0.06);
-}
-
-/* ---------- Case study ---------- */
+/* ---------- Case study / bridge cards ---------- */
 .case-study-card {
   background: #fff;
   border-radius: 1.25rem;
@@ -536,6 +453,8 @@ body {
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.06);
   overflow: hidden;
 }
+
+/* ---------- Feature check/cross lists ---------- */
 .case-list {
   list-style: none;
   padding: 0;
@@ -549,29 +468,6 @@ body {
 }
 .case-dot-red { color: #ef4444; flex-shrink: 0; margin-top: 0.2rem; }
 .case-dot-green { color: #22c55e; flex-shrink: 0; margin-top: 0.2rem; }
-
-/* ---------- Team ---------- */
-.team-card {
-  text-align: center;
-  padding: 1.5rem 1rem;
-  height: 100%;
-}
-.avatar-initials {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 9999px;
-  margin: 0 auto 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1.35rem;
-  color: #fff;
-}
-.team-credential {
-  color: #6b7280;
-  font-size: 0.85rem;
-}
 
 /* ---------- Coverage chips ---------- */
 .coverage-chip {
@@ -588,4 +484,91 @@ body {
 .coverage-chip-light {
   background: #eff6ff;
   color: var(--color-prim);
+}
+
+/* ---------- Spec list (cabinet contents) ---------- */
+.spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  height: 100%;
+  box-shadow: 0 4px 6px -4px rgba(0,0,0,0.06);
+}
+.spec-icon {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+}
+
+/* ---------- Application chips ---------- */
+.app-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.25rem;
+  border-radius: 9999px;
+  border: 2px solid var(--color-prim);
+  color: var(--color-prim);
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+/* ---------- Process steps (installation roadmap) ---------- */
+.process-step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.process-number {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #1266F1 0%, #0F52C7 100%);
+}
+.process-line {
+  width: 2px;
+  flex: 1;
+  background: #e5e7eb;
+  margin: 0.25rem 0;
+  min-height: 1.5rem;
+}
+
+/* ---------- Placeholder image note badge ---------- */
+.placeholder-note {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.6rem;
+  background: rgba(17, 24, 39, 0.75);
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.35rem;
+  letter-spacing: 0.02em;
+}
+.image-frame {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
