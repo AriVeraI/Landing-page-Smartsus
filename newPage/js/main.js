@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCounters();
   initContactForm();
   initParticles();
+  initBackToTop();
 });
 
 /* Footer year */
@@ -201,4 +202,21 @@ function initParticles() {
     dot.style.animationDuration = `${3 + Math.random() * 2}s`;
     container.appendChild(dot);
   }
+}
+
+/* Back-to-top floating button */
+function initBackToTop() {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+
+  const toggleVisibility = () => {
+    btn.classList.toggle('is-visible', window.scrollY > 400);
+  };
+
+  window.addEventListener('scroll', toggleVisibility, { passive: true });
+  toggleVisibility();
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }
