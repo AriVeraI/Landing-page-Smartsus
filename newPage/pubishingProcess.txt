@@ -1,0 +1,12 @@
+The instructions for publishing
+
+1.- go to folder
+    cd C:\GitKraken\Ari\Landing-page-Smartsus\newPage
+
+2.- node build.js
+
+3.-  firebase deploy
+
+2.5.-  firebase login --reauth
+
+opt.- npm install
