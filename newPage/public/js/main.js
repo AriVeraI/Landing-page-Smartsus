@@ -134,7 +134,7 @@ function initCounters() {
   }
 }
 
-/* Contact form: client-side simulated submit */
+/* Contact form: real submit to Formspree via fetch (AJAX) */
 function initContactForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
@@ -154,15 +154,28 @@ function initContactForm() {
         '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Enviando...';
     }
 
-    setTimeout(() => {
-      form.classList.add('d-none');
-      successPanel?.classList.remove('d-none');
-
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = btnDefaultLabel;
-      }
-    }, 1500);
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    })
+      .then((response) => {
+        if (response.ok) {
+          form.classList.add('d-none');
+          successPanel?.classList.remove('d-none');
+        } else {
+          throw new Error('Formspree submission failed');
+        }
+      })
+      .catch(() => {
+        errorPanel?.classList.remove('d-none');
+      })
+      .finally(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = btnDefaultLabel;
+        }
+      });
   });
 
   const sendAnotherBtn = document.getElementById('contactSendAnother');
